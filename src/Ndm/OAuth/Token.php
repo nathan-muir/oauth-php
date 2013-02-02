@@ -47,7 +47,7 @@ class Token
 	 * would respond to request_token and access_token calls with
 	 * @return string
 	 */
-	function to_string()
+	function toString()
 	{
 		return "oauth_token=" .
 			Util::urlEncodeRfc3986($this->key) .
@@ -60,6 +60,6 @@ class Token
 	 */
 	function __toString()
 	{
-		return $this->to_string();
+		return $this->toString();
 	}
 }
