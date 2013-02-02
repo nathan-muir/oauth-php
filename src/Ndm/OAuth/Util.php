@@ -12,7 +12,7 @@ class Util
 	public static function urlEncodeRfc3986($input)
 	{
 		if (is_array($input)) {
-			return array_map(array('Util', 'urlEncodeRfc3986'), $input);
+			return array_map(array('\\Ndm\\OAuth\\Util', 'urlEncodeRfc3986'), $input);
 		} else if (is_scalar($input)) {
 			return str_replace(
 				'+',
