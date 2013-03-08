@@ -29,7 +29,7 @@ interface DataStoreInterface
 	 * @param int $timestamp
 	 * @return bool
      */
-	public function lookupNonce(\Ndm\OAuth\Consumer $consumer, \Ndm\OAuth\Token $token, $nonce, $timestamp);
+	public function lookupNonce(\Ndm\OAuth\Consumer $consumer, \Ndm\OAuth\Token $token=null, $nonce='', $timestamp=0);
 
 	/**
 	 * @param \Ndm\OAuth\Consumer $consumer

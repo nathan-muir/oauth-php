@@ -269,7 +269,7 @@ class Server
 	 * @throws Exception\BadRequestException
 	 * @throws Exception\UnauthorisedException
 	 */
-	private function checkNonce(Consumer $consumer, Token $token, $nonce, $timestamp)
+	private function checkNonce(Consumer $consumer, Token $token=null, $nonce='', $timestamp=0)
 	{
 		if (!$nonce)
 			throw new Exception\BadRequestException(
